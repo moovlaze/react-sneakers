@@ -164,26 +164,6 @@ p {
 	}
 }
 
-header {
-	border-bottom: 1px solid #eaeaea;
-
-	h1 {
-		font-size: 0;
-		span {
-			font-weight: 700;
-			font-size: 20px;
-			line-height: 24px;
-			text-transform: uppercase;
-		}
-		p {
-			font-weight: 400;
-			font-size: 14px;
-			line-height: 17px;
-			color: #9d9d9d;
-		}
-	}
-}
-
 .content {
 	h2 {
 		margin: 0;
@@ -212,16 +192,4 @@ header {
 	&__card {
 		grid-column: 3 span;
 	}
-}
-
-.button {
-	align-self: flex-start;
-	height: 32px;
-	width: 32px;
-
-	background: #ffffff;
-	border: 1px solid #f2f2f2;
-	border-radius: 8px;
-
-	cursor: pointer;
 }

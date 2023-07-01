@@ -1,7 +1,9 @@
-function Header() {
+import styles from "./Header.module.scss";
+
+function Header(props) {
 	return (
-		<header className="d-flex justify-between align-center p-40">
-			<div className="headerLeft d-flex align-center">
+		<header className={styles.Header}>
+			<div className="d-flex align-center">
 				<img
 					className="mr-15"
 					src="img/logo.png"
@@ -14,8 +16,11 @@ function Header() {
 					<p>Магазин лучших кроссовок</p>
 				</h1>
 			</div>
-			<ul className="headerRight d-flex align-center">
-				<li className="d-flex align-center mr-30">
+			<ul className="d-flex align-center">
+				<li
+					className="d-flex align-center mr-30 cu-p"
+					onClick={props.onClickBasket}
+				>
 					<img
 						className="mr-10"
 						src="img/cart.svg"
